@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF496"
+    tools:context=".ControllerBarcodeScreen">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtonsCon"
+        android:layout_width="366dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutBarcodeInfoCon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonReadBarcode"
+            android:layout_width="145dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="#FBAD38"
+            android:onClick="ScanBarcodeCon"
+            android:text="barkod okut" />
+
+        <Button
+            android:id="@+id/buttonEnterBarcode"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#D4E42D"
+            android:onClick="EnterBarcodeInfoCon"
+            android:text="barkod bilgisi gir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBarcodeInfoCon"
+        android:layout_width="350dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="192dp"
+        android:orientation="vertical"
+        android:weightSum="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutButtonsCon">
+
+        <TextView
+            android:id="@+id/textViewGelenHata"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:text="Barkod Numarası"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonTamam"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:onClick="manuelBarcodeCon"
+            android:text="tamam" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

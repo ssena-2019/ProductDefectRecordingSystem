@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007452105445",
+    "firebase_url": "https://productdefectsystem-default-rtdb.firebaseio.com",
+    "project_id": "productdefectsystem",
+    "storage_bucket": "productdefectsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007452105445:android:4b519f18d267eabcb0420c",
+        "android_client_info": {
+          "package_name": "com.senamerdin.productdefectrecordingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007452105445-bfhanvniotophuf3rafe7htc4dl3d4n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNb_mKR3_kcC_mA1r9cRw8fSV7Pf6_Uw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007452105445-bfhanvniotophuf3rafe7htc4dl3d4n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
